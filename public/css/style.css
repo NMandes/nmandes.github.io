@@ -61,6 +61,9 @@ canvas {
   width: 300px;
   height: 300px;
 }
+.body-wrapper{
+
+}
 .chart {
   margin: 0px;
   padding-right: 10px;
@@ -126,6 +129,7 @@ iframe {
      height: 69vh;
      overflow: hidden;
 }
+
 .godselection {
   padding: 0 0;
      height: 128px;
@@ -223,6 +227,11 @@ footer p {
 .detailed-img {
   height:100px;
   width: 100px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%
 }
 /******************************************
 /* @media                  
