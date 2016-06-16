@@ -62,7 +62,7 @@ canvas {
   height: 300px;
 }
 .body-wrapper{
-
+    height: 768px;
 }
 .chart {
   margin: 0px;
