@@ -1,0 +1,257 @@
+/* 
+Project Name: Smite CHarts
+Author: Nathaniel Mandes
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+.hide {
+  display: none;
+}
+.display-block {
+
+}
+.align-right {
+	float: right; 
+}
+.align-left {
+	float: left; 
+}
+h1, h5, h2 {
+     margin: 0;
+}
+div {
+     /*border: solid .25px #000;*/
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: "Biryani",Helvetica, Arial, sans-serif;
+     font-weight: 300;
+     margin:0px;
+}
+canvas {
+  width: 300px;
+  height: 300px;
+}
+.chart {
+  margin: 0px;
+  padding-right: 10px;
+}
+.padding-left {
+     padding-left: 30px;
+}
+.padding-top {
+     padding-top: 30px;
+}
+.padding-right {
+     padding-right: 30px;
+}
+.margin-bottom {
+  margin-bottom: 30px;
+}
+.margin-top {
+  margin-top: 30px;
+}
+.inline-block {
+  display: inline-block;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.display-block {
+  display: block;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+.site-title {
+  letter-spacing: -3px;
+}
+.wrapper::-webkit-scrollbar { 
+    display: none;
+} 
+#stat_chart {
+     height: 25vh;
+     width: 25vw;
+}
+.godhero{
+     height: 115px;   
+}
+.title-container {
+  /*background-color: #a1a1a1;*/
+}
+iframe {
+     width: 100%;
+     height: 69vh;
+     overflow: hidden;
+}
+.godselection {
+  padding: 0 0;
+     height: 128px;
+     max-width: 95px;
+     background-color: #ccc;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     cursor: pointer;
+}
+.godselection:hover {
+     height: 128px;
+     max-width: 95px;
+     background-color: #ddd;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      opacity: 0.8;
+}
+.title {
+  text-align: center;
+  padding-top: 10px;
+}
+.god_img {
+  height: 200px;
+  width: 200px;
+}
+.nav-menu {
+     display: inline-block;
+}
+.nav-logo {
+     height: 40px;
+     width: 150px;
+     display: inline-block;
+}
+.formfield {
+     /*background-color: #aaa;*/
+     /*height: 90px;*/
+     padding-top: 15px;   
+}
+.sub-header {
+     font-style: italic;
+     color: rgb(80, 70, 70);
+     letter-spacing: -1;
+}
+.chart_area {
+  opacity: 0.0;
+}
+.back {
+  display: none;
+}
+.back:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+input {
+     width: 225px;
+}
+li{ 
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 2px;
+    margin-left: 15px;
+    line-height: 2.2;
+    cursor: pointer; 
+ }
+ul {
+    list-style: none;
+    display: inline-block;
+
+}
+ol {
+    list-style: none;
+}
+.nav {
+    padding-top: 10px;
+    height: 46px;
+    font-size: 18pt;
+}
+#stats-nav-link {
+      font-size: 18px;
+}
+#about-nav-link {
+      font-size: 18px;
+}
+img {
+      width: 100%;
+}
+footer {
+  background-color: #ccc;
+  height: 100px;
+}
+footer p {
+  padding:30px 30px;
+}
+.detailed-img {
+  height:100px;
+  width: 100px;
+}
+/******************************************
+/* @media                  
+/*******************************************/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .godselection {
+      padding: 0 0;
+     height: 128px;
+     background-color: #ccc;
+     margin-right: 30px;
+     margin-bottom: 30px;
+}
+.godselection:hover {
+    height: 128px;
+    background-color: #ddd;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+}
