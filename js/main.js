@@ -52,7 +52,6 @@ function animateElement(element, animation, timing){
 }
 // Custom Animation Functions
 function animateContact (){
-	log($("iframe")[0].style);
 	if($("iframe")[0].style.display == "block")
 	{
 		fastdom.mutate(function(){
