@@ -49,6 +49,9 @@ function _(element_id){
 function animateElement(element, animation, timing){		
 			Velocity(element, animation, timing)
 }
+function animateContact (){
+	
+}
 // animateElement($(".button"),fadeOut,4000)
 fastdom.mutate(function(){
 animateElement($("body"),{backgroundColor: '#DDDDDD'},4400)
@@ -56,3 +59,8 @@ animateElement($(".initials"),{color:'#ffffff'},4000)
 animateElement($("#name"),{color: '#222222', letterSpacing: '9px', opacity: '0.8'},4400)
 animateElement($("#subhead"),{color: '#444444', opacity: '0.7'},5000)
 })
+setTimeout(function(){ 
+	fastdom.mutate(function(){
+		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 4400)
+	}) }, 4400);
+
