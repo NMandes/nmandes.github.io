@@ -1,6 +1,7 @@
 var fadeIn = {opacity:100}
 var fadeOut = {opacity:0}
 
+// Utility Functions
 function log(text){
 	return console.log(text)
 }
@@ -23,7 +24,7 @@ function $(element_id){
 	}
 	else
 	{
-		console.log("element_id is not a string")
+		console.log("ERROR: element_id is not a string")
 	}
 }
 function _(element_id){
@@ -41,7 +42,7 @@ function _(element_id){
 			}
 			else
 			{
-				console.log("element_id is not a string")
+				console.log("ERROR: element_id is not a string")
 			}
 	})
 	return ele_obj
@@ -49,18 +50,37 @@ function _(element_id){
 function animateElement(element, animation, timing){		
 			Velocity(element, animation, timing)
 }
+// Custom Animation Functions
 function animateContact (){
-	
+	log($("iframe")[0].style);
+	if($("iframe")[0].style.display == "block")
+	{
+		fastdom.mutate(function(){
+		animateElement($("iframe"),{opacity: '0.0'}, 400)
+		setTimeout(function(){animateElement($("iframe"),{display: 'none'}, 100) },400)
+	})
+	}
+	else
+	{
+		fastdom.mutate(function(){
+		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 1400)
+	})
+	}
 }
+
 // animateElement($(".button"),fadeOut,4000)
+
+//Init Animations
 fastdom.mutate(function(){
 animateElement($("body"),{backgroundColor: '#DDDDDD'},4400)
 animateElement($(".initials"),{color:'#ffffff'},4000)
 animateElement($("#name"),{color: '#222222', letterSpacing: '9px', opacity: '0.8'},4400)
 animateElement($("#subhead"),{color: '#444444', opacity: '0.7'},5000)
 })
-setTimeout(function(){ 
-	fastdom.mutate(function(){
-		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 4400)
-	}) }, 4400);
+// setTimeout(function(){ 
+// 	fastdom.mutate(function(){
+// 		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 4400)
+// 	}) }, 4400);
 
+// Listeners
+document.getElementById("contact_btn").addEventListener("click", animateContact);

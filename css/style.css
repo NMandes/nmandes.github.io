@@ -1,3 +1,14 @@
+/*Utilities*/
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*Main*/
+
 body {
 	background-color: #111;
 	line-height: 1;
@@ -57,10 +68,17 @@ iframe {
 	font-style: normal;
 	padding-top: 40px;
 }
+.nav_container {
+	position: relative;
+	z-index: 4000;
+}
 .nav {
 	margin-top: 60px;
     text-align: center;
 
+}
+.btn:not(:first-child){
+	margin-left: 20px;
 }
 /* Mobile first queries */
 
