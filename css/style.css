@@ -79,6 +79,10 @@ iframe {
 }
 .btn:not(:first-child){
 	margin-left: 20px;
+	
+}
+.btn {
+	opacity: 0.0;
 }
 /* Mobile first queries */
 

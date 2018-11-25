@@ -77,10 +77,10 @@ animateElement($(".initials"),{color:'#ffffff'},4000)
 animateElement($("#name"),{color: '#222222', letterSpacing: '9px', opacity: '0.8'},4400)
 animateElement($("#subhead"),{color: '#444444', opacity: '0.7'},5000)
 })
-// setTimeout(function(){ 
-// 	fastdom.mutate(function(){
-// 		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 4400)
-// 	}) }, 4400);
+setTimeout(function(){ 
+	fastdom.mutate(function(){
+		animateElement($(".btn"),{opacity: '1.0'}, 2400)
+	}) }, 4400);
 
 // Listeners
 document.getElementById("contact_btn").addEventListener("click", animateContact);
