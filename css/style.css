@@ -205,6 +205,15 @@ iframe {
 		font-style: normal;
 		padding-top: 0px;
 	}
+	iframe {
+	padding-top: 60px;
+    width: 550px;
+    height: 1200px;
+    margin: 20px auto;
+    border: 0;
+    opacity: 0.0;
+    display: none;
+}
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
@@ -248,6 +257,15 @@ iframe {
 		font-family: zeitung-micro, sans-serif;
 		font-weight: 300;
 		font-style: normal;
+	}
+	iframe {
+		padding-top: 60px;
+	    width: 600px;
+	    height: 1200px;
+	    margin: 20px auto;
+	    border: 0;
+	    opacity: 0.0;
+	    display: none;
 	}
 }
 /* Larger than Desktop HD */

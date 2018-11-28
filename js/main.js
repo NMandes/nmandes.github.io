@@ -64,10 +64,10 @@ function animateContact (){
 	if($("iframe")[0].style.display == "block" )
 	{
 		fastdom.mutate(function(){
-		animateElement($("iframe"),{opacity: '0.0'}, 400)
+		animateElement($("iframe"),{opacity: '0.0'}, 220)
 		setTimeout(function(){
 			animateElement($("iframe"),{display: 'none'}, 100) 
-		},400)
+		},220)
 	})
 	}
 	else
