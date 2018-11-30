@@ -101,6 +101,9 @@ iframe {
 }
 .btn {
 	opacity: 0.0;
+	font-family: zeitung, sans-serif;
+	font-size: 10px;
+
 }
 .img-gal {
 	opacity: 0.0;
