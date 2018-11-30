@@ -17,7 +17,7 @@ img {
 	width: 100%;
 	border-radius: 2px;
 }
-footer {
+/*footer {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -25,7 +25,7 @@ footer {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
-}
+}*/
 /* Mobile first queries */
 iframe {
     width: 340px;
