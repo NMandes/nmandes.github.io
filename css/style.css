@@ -11,26 +11,34 @@
 body {
 	background-color: #111;
 	line-height: 1;
-	min-height: 100%;
+	min-height: 100vh;
+   	position:relative;
 }
 img {
 	width: 100%;
 	border-radius: 2px;
 }
-/*footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}*/
+footer {
+	height: 24px;
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 10px 0px 0px 22px;
+  	background-color: #444444;
+  	/*text-align: center;*/
+  	opacity: 0.0;
+}
+footer p {
+	margin-bottom: 0rem;
+	color: #ffffff;
+	font-size: 11px;
+}
 /* Mobile first queries */
 iframe {
     width: 340px;
     height: 1000px;
-    margin: -20px auto 30px auto;
+    margin: -20px auto 50px auto;
     border: 0;
     opacity: 0.0;
     display: none;
@@ -97,7 +105,8 @@ iframe {
 .img-gal {
 	opacity: 0.0;
 	height: 0px;
-	padding: 20px 0px 40px 0px; 
+	padding: 20px 0px 40px 0px;
+	margin-bottom: 30px;
 }
 .container {
 

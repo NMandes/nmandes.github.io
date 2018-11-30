@@ -115,6 +115,7 @@ document.getElementById("port_btn").addEventListener("click", animateGallery);
 
 //Init Animations
 fastdom.mutate(function(){
+animateElement($("footer"),{backgroundColor: '#222222', opacity: '1.0'},4400)	
 animateElement($("body"),{backgroundColor: '#DDDDDD'},4400)
 animateElement($(".initials"),{color:'#ffffff'},4000)
 animateElement($("#name"),{color: '#222222', letterSpacing: '9px', opacity: '0.8'},4400)
