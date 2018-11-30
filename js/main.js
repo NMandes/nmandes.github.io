@@ -1,6 +1,3 @@
-var fadeIn = {opacity:100}
-var fadeOut = {opacity:0}
-
 // Utility Functions
 function log(text){
 	return console.log(text)
@@ -52,11 +49,6 @@ function animateElement(element, animation, timing){
 }
 // Custom Animation Functions
 function animateContact (){
-	log($('.Velocity-animating'))
-	// if($('.Velocity-animating'))
-	// {
-	// 	Velocity('stop')
-	// }
 	if($(".swiper1")[0].style.display == "block" )
 	{
 		animateGallery()
@@ -64,26 +56,24 @@ function animateContact (){
 	if($("iframe")[0].style.display == "block" )
 	{
 		fastdom.mutate(function(){
-		animateElement($("iframe"),{opacity: '0.0'}, 220)
-		setTimeout(function(){
-			animateElement($("iframe"),{display: 'none'}, 100) 
-		},220)
-	})
+			animateElement($("iframe"),{opacity: '0.0'}, 220)
+			setTimeout(function(){
+				animateElement($("iframe"),{display: 'none'}, 100) 
+			},220)
+		})
 	}
 	else
 	{
 		fastdom.mutate(function(){
-		animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 1400)
-	})
+			animateElement($("iframe"),{display: 'block', opacity: '1.0'}, 1400)
+		})
 	}
 }
 function animateGallery(){
-
 	if($("iframe")[0].style.display == "block")
 	{
 		animateContact()
 	}
-	log($(".swiper1")[0].style.display)
 		if($(".swiper1")[0].style.display == "block")
 		 {
 			fastdom.mutate(function(){
@@ -95,7 +85,6 @@ function animateGallery(){
 				setTimeout(function(){
 					animateElement($(".img-gal"),{height: '0px'}, 100) 
 				},400)
-
 			})
 		}
 		else 
@@ -104,7 +93,7 @@ function animateGallery(){
 				animateElement($(".swiper1"),{display: 'block'}, 100)
 				animateElement($(".swiper2"),{display: 'block'}, 100)
 				setTimeout(function(){
-					animateElement($(".img-gal"),{height: '1120px'}, 100) 
+					animateElement($(".img-gal"),{height: '100%'}, 100) 
 				},400)
 				setTimeout(function(){
 					animateElement($(".img-gal"),{opacity: '1.0'}, 240) 
@@ -119,8 +108,6 @@ var swiper1 = new Swiper('.swiper1', {
 var swiper1 = new Swiper('.swiper2', {
 	observer: true
 })
-
-
 
 // Listeners
 document.getElementById("contact_btn").addEventListener("click", animateContact);
