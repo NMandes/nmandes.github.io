@@ -44,7 +44,7 @@ iframe {
     display: none;
 }
 #main_header {
-	padding-top: 80px;
+	padding-top: 60px;
 }
 #initials {
 	height: 60px;
@@ -86,7 +86,7 @@ iframe {
 	font-family: zeitung-micro, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	padding-top: 40px;
+	padding-top: 45px;
 }
 .nav_container {
 	position: relative;
