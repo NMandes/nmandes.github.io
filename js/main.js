@@ -54,7 +54,9 @@ var swiper1 = new Swiper('.swiper1', {
 	observer: true,
 	autoplay: {
     delay: 5000,
-    disableOnInteraction: false
+  },
+  zoom: {
+    toggle: false
   },
 
 })
@@ -63,12 +65,18 @@ var swiper1 = new Swiper('.swiper2', {
 	autoplay: {
     delay: 5000,
   },
+  zoom: {
+    toggle: false
+  }
 })
 var swiper1 = new Swiper('.swiper3', {
 	observer: true,
 	autoplay: {
     delay: 5000,
   },
+  zoom: {
+    toggle: false
+  }
 })
 
 // Listeners
