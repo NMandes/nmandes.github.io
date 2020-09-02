@@ -44,7 +44,7 @@ iframe {
     display: none;
 }
 #main_header {
-	padding-top: 60px;
+	padding-top: 50px;
 }
 #initials {
 	height: 60px;
@@ -190,7 +190,7 @@ iframe {
 		font-family: zeitung-micro, sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		padding-top: 25px;
+		padding-top: 35px;
 	}
 }
 /* Larger than tablet */
