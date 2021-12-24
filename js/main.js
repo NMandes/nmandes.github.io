@@ -78,6 +78,15 @@ var swiper1 = new Swiper('.swiper3', {
     toggle: false
   }
 })
+var swiper1 = new Swiper('.swiper4', {
+	observer: true,
+	autoplay: {
+    delay: 5000,
+  },
+  zoom: {
+    toggle: false
+  }
+})
 
 // Listeners
 
@@ -94,6 +103,7 @@ setTimeout(function(){
 				animateElement($(".swiper1"),{display: 'block'}, 100)
 				animateElement($(".swiper2"),{display: 'block'}, 100)
 				animateElement($(".swiper3"),{display: 'block'}, 100)
+				animateElement($(".swiper4"),{display: 'block'}, 100)
 
 				setTimeout(function(){
 					animateElement($(".img-gal"),{height: '100%'}, 100)
