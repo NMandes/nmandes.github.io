@@ -14,6 +14,7 @@ body {
 	min-height: 100vh;
    	position:relative;
    	overflow: overlay;
+   	margin: 0px;
 }
 img {
 	width: 100%;
@@ -113,6 +114,12 @@ iframe {
 }
 .container {
 
+}
+.swiper-pagination4 {
+	bottom: 6px!important;
+}
+.swiper-pagination4 > .swiper-pagination-bullet {
+	background: #ffffff;
 }
 .swiper1 {
 	display: none;
