@@ -47,70 +47,10 @@ function $(element_id){
 function animateElement(element, animation, timing){
 			Velocity(element, animation, timing)
 }
-// Custom Animation Functions
+
 
 // Variable Setup
-var swiper1 = new Swiper('.swiper1', {
-	observer: true,
-	grabCursor: true,
-	touchMoveStopPropagation: true,
-	autoplay: {
-    delay: 5000
-  },
-  zoom: {
-    toggle: true
-  },
-  pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-  }
 
-})
-var swiper2 = new Swiper('.swiper2', {
-	observer: true,
-	grabCursor: true,
-	autoplay: {
-    delay: 5000
-  },
-  zoom: {
-    toggle: true
-  },
-  pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-  }
-
-})
-var swiper3 = new Swiper('.swiper3', {
-	observer: true,
-	grabCursor: true,
-	autoplay: {
-    delay: 5000
-  },
-  zoom: {
-    toggle: true
-  },
-  pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-  }
-
-})
-var swiper4 = new Swiper('.swiper4', {
-	observer: true,
-	grabCursor: true,
-	autoplay: {
-    delay: 5000
-  },
-  zoom: {
-    toggle: true
-  },
-  pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-  }
-
-})
 
 // Listeners
 
@@ -125,10 +65,7 @@ animateElement($("#subhead"), {color: '#444444', opacity: '0.7'}, 5000)
 setTimeout(function(){
 	fastdom.mutate(function(){
 
-				animateElement($(".swiper1"), {display: 'block'}, 100)
-				animateElement($(".swiper2"), {display: 'block'}, 100)
-				animateElement($(".swiper3"), {display: 'block'}, 100)
-				animateElement($(".swiper4"), {display: 'block'}, 100)
+
 				animateElement($("footer"), {backgroundColor: '#222222', opacity: '1.0'}, 140)
 
 				setTimeout(function(){
